@@ -32,13 +32,25 @@ module.exports = {
       { extensions: ['.jsx', '.js'] }
     ],
     'import/prefer-default-export': 'off',
+    "camelcase": "off",
     'react/state-in-constructor': [2, 'never'],
     'no-param-reassign': 'off',
     'no-console': ["error", { allow: ["tron"] }],
     'jsx-a11y/control-has-associated-label': 'off',
-    'jsx-a11y/label-has-associated-control': 'on',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    'react/jsx-props-no-spreading': ['off']
+    'react/jsx-props-no-spreading': ['off'],
+    'no-underscore-dangle': 0,
+    'react/prop-types': 0,
+    "jsx-a11y/label-has-associated-control": [
+      "off",
+      {
+        "labelComponents": [],
+        "labelAttributes": [],
+        "controlComponents": [],
+        "assert": "both",
+        "depth": 25
+      }
+    ],
   }
 };
